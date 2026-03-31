@@ -25,5 +25,7 @@ string checkStatus(float bmi){
 }
 
 int main(){
+    float weight, height;
+    inputData(weight, height);
 
 }
