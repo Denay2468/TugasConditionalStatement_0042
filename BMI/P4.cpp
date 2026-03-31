@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 void inputData(float &weight, float &height){
@@ -27,5 +28,14 @@ string checkStatus(float bmi){
 int main(){
     float weight, height;
     inputData(weight, height);
+
+    float bmi = calculateBMI(weight, height);
+    string status = checkStatus(bmi);
+
+    cout << endl;
+    cout << "--- Result ---" << endl;
+    cout << fixed << setprecision(4);
+    cout << "Your BMI : " << bmi << endl;
+    cout << "Status   : " << status << endl;
 
 }
