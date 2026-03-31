@@ -7,7 +7,12 @@ float Average(float a, float b){
 
 string GraduationStatus(float r){
     if (r >= 60)
-        return "Passed";
+        if(r > 80){
+            return "Graduated with Distinction";
+        }
+        else{
+            return "Graduated with Good Standing";
+        }
     else
         return "Failed";
 }
